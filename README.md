@@ -15,16 +15,19 @@ Front-end Leilão holandês.
    ```sh
    git clone https://github.com/PedroMantovani/Dutch-Auction.git
    ```
-2. Instale os pacotes NPM:
+2. Acesse a pasta:
+   ```sh
+   cd Dutch-Auction
+   ```
+3. Instale os pacotes NPM:
    ```sh
    npm install
    ```
-   
-3. Inicie o projeto com o comando:
+4. Inicie o projeto com o comando:
    ```sh
    npm run dev
    ```
-4. Acesse no link:
+5. Acesse no link:
    ```sh
    localhost:3000
    ```
