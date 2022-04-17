@@ -1,0 +1,35 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            <% for(var i=0; i<leilao.length; i++) {%>
+                <div class="col">
+                    <div class="card shadow-sm">
+
+                        <img class="img-fluid img-thumbnail" src="<%= leilao[i].img %>" alt="ferrari">
+
+                        <div class="card-body">
+                            <p>
+                                <strong>
+                                    <%= leilao[i].nome %>
+                                </strong>
+                            </p>
+                            <p class="card-text">
+                                <%= leilao[i].texto %>
+                            </p>
+                            <hr class="my-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="/" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                    <a href="/" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="images/leilao.png" />
+    <script src="../public/javascripts/js.js"></script>
+</head>
+
+<body>
+
+    <%- include('nav'); %>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <img src="https://via.placeholder.com/1320x120.png" class="img-fluid" alt="exemplo img">
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-4 mt-5">
+            <div class="row justify-content-md-center">
+                <div class="col">
+                    <img src="https://via.placeholder.com/600.png" class="img-fluid" alt="exemplo img">
+                </div>
+                <div class="col">
+                    <p class="fs-1 fw-bold ">Exemplo</p>
+                    <p class="fs-2 fw-bold "><strong>R$ 2.000.000,00</strong></p>
+
+                    <p class="text-start">Início: 16/04/2022</p>
+                    <p class="text-start">Fim: 20/04/2022</p>
+
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control rounded-0" placeholder="R$: 00,00"
+                            style="height: 60px;">
+                        <span class="input-group-text rounded-0">R$</span>
+                    </div>
+                    <button type="button" class="btn btn-secondary rounded-0"
+                        style="width: 100%; height: 60px;">Lance</button>
+
+                    <hr>
+
+                    <p class="fs-4 fw-bold">Descrição:</p>
+                    <p class="lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde ut quaerat beatae
+                        quo quasi obcaecati consequuntur saepe dolorem quisquam voluptas fugiat accusamus reiciendis,
+                        possimus earum repudiandae fugit magni sed.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <%- include('footer'); %>
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/@popperjs/core@2"></script>
+</body>
+
+</html>
