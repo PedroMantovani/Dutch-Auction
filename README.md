@@ -16,7 +16,7 @@ Front-end Leilão holandês.
    git clone https://github.com/PedroMantovani/Dutch-Auction.git
    ```
 2. Acesse a pasta:
-   ```sh
+   ```shell
    cd Dutch-Auction
    ```
 3. Instale os pacotes NPM:
