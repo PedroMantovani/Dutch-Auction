@@ -7,16 +7,15 @@ Front-end Leilão holandês.
 
 * NodeJS
 * NPM
-
 - Utilize sempre as versões mais atualizadas dos requisitos acima.
 
 ### Installation
 
-1. Clone o repo
+1. Clone o repo:
    ```sh
    git clone https://github.com/PedroMantovani/Dutch-Auction.git
    ```
-2. Instale os pacotes NPM
+2. Instale os pacotes NPM:
    ```sh
    npm install
    ```
