@@ -14,7 +14,7 @@ Front-end Leilão holandês.
 
 1. Clone o repo
    ```sh
-   git clone https://github.com/PedroMantovani/backendCNPJ
+   git clone https://github.com/PedroMantovani/Dutch-Auction.git
    ```
 2. Instale os pacotes NPM
    ```sh
