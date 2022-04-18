@@ -31,3 +31,12 @@ Front-end Leilão holandês.
    ```sh
    localhost:3000
    ```
+   
+### Contribuidores
+*Alexandre Roberto de Araujo Junior RA: 2100785
+*Amarildo Jakson Umbelino Palma	RA: 2100731
+*Leonardo de Lucena Barone RA: 2100313
+*Leonardo Pacheco Fuga RA: 2100766
+*Marcella Silva Sanches RA: 2100458
+*Pedro Henrique Nilson Mantovani RA: 2102144
+*Renata Monteiro Machado RA: 2101436
