@@ -9,7 +9,14 @@ router.get('/', function (req, res, next) {
 router.post('/cadastrar', async function (req, res, next) {
   let teste = req.body
   console.log(teste)
-  // res.render('cadastro', { title: 'Leilão Holandes - Cadastrar venda' });
+  try {
+
+    let { } = req.body
+
+
+  } catch (error) {
+    res.render('cadastro', { title: 'Leilão Holandes - Cadastrar venda' });
+  }
 });
 
 module.exports = router;

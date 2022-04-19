@@ -16,6 +16,12 @@
   border: 0 !important;
 }
 
-a .focus:hover {
-  background-color: #EF4420 !important;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
