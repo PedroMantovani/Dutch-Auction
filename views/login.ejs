@@ -77,30 +77,32 @@
 
   <main class="form-signin">
     <% if (messages.error) { %>
-      <%= messages.error %>
-        <% } %>
-          <form action="/login" method="POST">
-            <img class="mb-4" src="images/leilao.png" alt="" width="80" height="80">
-            <h1 class="h3 mb-3 fw-normal">Fazer login</h1>
+      <div class="alert alert-danger d-flex align-items-center" role="alert">
+        <%= messages.error %>
+      </div>
+      <% } %>
+        <form action="/login" method="POST">
+          <img class="mb-4" src="images/leilao.png" alt="" width="80" height="80">
+          <h1 class="h3 mb-3 fw-normal">Fazer login</h1>
 
-            <div class="form-floating">
-              <input type="email" class="form-control" name="email" id="email" placeholder=email">
-              <label for="email">Email</label>
-            </div>
-            <div class="form-floating">
-              <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-              <label for="password">Senha</label>
-            </div>
+          <div class="form-floating">
+            <input type="email" class="form-control" name="email" id="email" placeholder=email">
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+            <label for="password">Senha</label>
+          </div>
 
-            <div class="mb-3">
-              <label>
-                <!-- <input type="checkbox" value="remember-me"> Remember me -->
-                <a href="/register">Registre-se</a>
-              </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-          </form>
+          <div class="mb-3">
+            <label>
+              <!-- <input type="checkbox" value="remember-me"> Remember me -->
+              <a href="/register">Registre-se</a>
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+          <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        </form>
   </main>
 </body>
 

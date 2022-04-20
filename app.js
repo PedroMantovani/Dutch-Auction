@@ -33,13 +33,16 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use(cookieParser());
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(flash())
 app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: false,
+  cookie: {
+    maxAge: 1000 * 60 * 60 * 24
+  }
 }))
 app.use(passport.initialize())
 app.use(passport.session())
@@ -59,20 +62,23 @@ app.get('/', function (req, res, next) {
     })
 
 });
-
-
-
 app.use('/cadastrovenda', checkAuthenticated, cadastroRouter);
 // app.use('/cadastrovenda', cadastroRouter);
 app.use('/leilao', leilaoRouter);
 
+app.use('/lance/:id', checkAuthenticated, (req, res) => {
+
+})
+
+
+//  LOGIN E REGISTRO
 app.get('/login', checkNotAuthenticated, (req, res) => {
   res.render('login', { title: 'Leilão Holandes - Login' })
 })
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
   successRedirect: '/',
   failureRedirect: '/login',
-  failureFlash: true
+  failureFlash: false
 }))
 app.get('/register', checkNotAuthenticated, (req, res) => {
   res.render('register', { title: 'Leilão Holandes - Login' })
@@ -105,6 +111,7 @@ function checkAuthenticated(req, res, next) {
 }
 function checkNotAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
+    console.log(req.isAuthenticated())
     return res.redirect('/')
   }
   next()

@@ -9,6 +9,7 @@ router.get('/', function (req, res, next) {
 router.post('/cadastrar', async function (req, res, next) {
   let teste = req.body
   console.log(teste)
+  console.log(req.user);
   try {
 
     let { } = req.body

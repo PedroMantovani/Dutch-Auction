@@ -1,1 +1,1 @@
-console.log("Carregado")
+console.log(req.user)

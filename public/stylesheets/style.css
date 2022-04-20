@@ -25,3 +25,16 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.btn-secondary {
+  color: #fff;
+  background-color: #fa962c;
+  border-color: #f69021;
+  border-bottom: 4px solid #f88000;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #f7860e;
+  border-color: #fc8a11;
+}
